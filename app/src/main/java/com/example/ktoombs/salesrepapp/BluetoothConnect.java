@@ -9,7 +9,6 @@ import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -30,7 +29,7 @@ public class BluetoothConnect extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bluetooth_connect);
+        setContentView(R.layout.activity_bluetooth_discover);
         pairedDevices = new ArrayList<>();
         devices = new ArrayList<BluetoothDevice>();
         filter = new IntentFilter(BluetoothDevice.ACTION_FOUND);
